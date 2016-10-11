@@ -37,7 +37,7 @@ HeaderExamplesDoc.defaultProps = {
       props: { code: (
         <Header justify="between">
           <Title>Title</Title>
-          <Menu direction="row" align="center" responsive={false}>
+          <Menu direction="row" align="center" inline={false}>
             <Anchor href="#" className="active">First</Anchor>
             <Anchor href="#">Second</Anchor>
             <Anchor href="#">Third</Anchor>
