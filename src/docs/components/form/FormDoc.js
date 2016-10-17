@@ -6,6 +6,7 @@ import Header from 'grommet/components/Header';
 import Footer from 'grommet/components/Footer';
 import FormFields from 'grommet/components/FormFields';
 import FormField from 'grommet/components/FormField';
+import Menu from 'grommet/components/Menu';
 import Button from 'grommet/components/Button';
 import DocsArticle from '../../../components/DocsArticle';
 import NavAnchor from '../../../components/NavAnchor';
@@ -66,8 +67,10 @@ export default class FormDoc extends Component {
               </fieldset>
             </FormFields>
             <Footer pad={{vertical: 'medium'}}>
-              <Button label="Submit" primary={true}
-                onClick={() => alert('submit')} />
+              <Menu>
+                <Button label="Submit" primary={true}
+                  onClick={() => alert('submit')} />
+              </Menu>
             </Footer>
           </Form>
         </section>
